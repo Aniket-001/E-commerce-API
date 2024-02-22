@@ -1,0 +1,9 @@
+
+# ignore node modules
+/node_modules
+
+# ignore environment variables
+/config/config.env
+
+# ignore dummy data
+/DummyData
