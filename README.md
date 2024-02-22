@@ -2,6 +2,30 @@
 
 This project is an implementation of an Ecommerce API using Node.js. The API provides endpoints for various e-commerce operations such as product and category listing, product details, cart management, order processing, user authentication using JSON Web Tokens (JWT), and more.
 
+## Web services Hoisted on : - [API HOISTED ON RENDRER](https://e-commerce-api-6q3i.onrender.com)
+
+
+## All endpoints
+
+- **Endpoint:** `api/v1/category/listing'`  --> list all category
+- **Endpoint:** `api/v1/category/listing/:id`  --> list products by category ID
+
+- **Endpoint:** `api/v1/product/`  --> get all products
+
+- **Endpoint:** `api/v1/product/:id`  --> get product detail using product id
+- **Endpoint:** `api/v1/product/:id`  --> add product to the cart
+- **Endpoint:** `api/v1/product/:id`  --> remove product from the cart
+- **Endpoint:** `api/v1/product/:id`  --> update product quantity
+
+- **Endpoint:** `api/v1/user/register`  --> user registeration
+- **Endpoint:** `api/v1/user/login`  --> user login
+- **Endpoint:** `api/v1/user/logout`  --> userlogout
+- **Endpoint:** `api/v1/user/orders/`  --> get all orders history
+- **Endpoint:** `api/v1/user/orders/:id`  --> get particular order history
+- **Endpoint:** `api/v1/user/order/:id`   --> place particular order 
+
+
+
 ## Table of Contents
 
 - [Requirements](#requirements)
@@ -10,7 +34,6 @@ This project is an implementation of an Ecommerce API using Node.js. The API pro
 - [User Authentication](#user-authentication)
 - [Error Handling](#error-handling)
 - [Documentation](#documentation)
-- [Rate Limiting (Optional)](#rate-limiting-optional)
 
 ## Requirements
 
@@ -87,5 +110,6 @@ Create documentation for the API endpoints, including details about their functi
 2. Install dependencies: `npm install`
 3. Configure the database connection in `.env` file.
 4. Run the server: `npm start`
+
 
 
