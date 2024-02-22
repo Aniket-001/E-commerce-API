@@ -6,28 +6,28 @@ import Error from "../utils/customError.js";
 import { catchAsyncError } from "../utils/asyncErrorHandler.js";
 
 //Dummy Data
-import data from "../DummyData/data.js";
+// import data from "../DummyData/data.js";
 
 
 
 // to fill dummy data into the database
-export const fillData = catchAsyncError(async (req, res, next) => {
+// export const fillData = catchAsyncError(async (req, res, next) => {
 
-  data.forEach(async (obj) => {
-    const detail = await Product.create(obj);
+//   data.forEach(async (obj) => {
+//     const detail = await Product.create(obj);
 
-    const id = detail._id;
-    const cat = await Category.findOne({ category: detail.category });
-    cat.products.push(id);
-    await cat.save();
-  });
+//     const id = detail._id;
+//     const cat = await Category.findOne({ category: detail.category });
+//     cat.products.push(id);
+//     await cat.save();
+//   });
 
 
-  res.status(200).json({
-    success: true,
-    message: `Successfull!`
-  })
-});
+//   res.status(200).json({
+//     success: true,
+//     message: `Successfull!`
+//   })
+// });
 
 
 // Get particular product with given id
